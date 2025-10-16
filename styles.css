@@ -1,0 +1,50 @@
+.device-box::after {
+    content: "Default";
+    display: block;
+    text-align: center;
+    padding: 60px;
+    background-color: lightgray;
+    font-size: 2em;
+    border: 3px solid black;
+}
+
+/*mobile view*/
+@media (max-width: 599px) {
+    .device-box::after {
+        content: "Mobile Device";
+        background-color: lightblue;
+        font-size: 1.5em;
+    }
+}
+
+/*tablet view*/
+@media (min-width: 600px) and (max-width: 899px) {
+    .device-box::after {
+        content: "Tablet Device";
+        background-color: lightgreen;
+        border: 3px dotted black;
+    }
+}
+
+/*desktop view*/
+@media (min-width: 900px) {
+    .device-box::after {
+        content: "Desktop Device";
+        background-color: lightcoral;
+        font-size: 2.5em;
+        border: 3px dashed black;
+        padding: 80px;
+        display: center;
+    }
+}
+
+/*large desktop view*/
+@media (min-width: 1200px) {
+    .device-box::after {
+        content: "Large Desktop Device";
+        background-color: gold;
+        font-size: 3em;
+        border: 4px solid black;
+        padding: 100px;
+    }
+}
